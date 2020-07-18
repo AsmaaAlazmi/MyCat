@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_charity_back"
+    tools:context=".HelpCats_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="390dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/link_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/linktosite"
+        android:textColor="#116485"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="478dp"
+        android:layout_marginStart="145dp"/>
+
+</RelativeLayout>

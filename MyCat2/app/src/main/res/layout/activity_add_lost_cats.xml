@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_lostCats"
+    android:background="@drawable/adopte_head">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="390dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/download_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_download"
+        android:layout_marginTop="205dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="205dp"
+        android:fontFamily="@font/arabic"
+        android:text="صورة قطك  >"
+        android:textColor="#463347"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ادخل معلومات قطك  :"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/arabic"
+        android:layout_marginStart="100dp"
+        android:textSize="25sp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_lost_image"
+        android:layout_width="160dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="240dp"
+        app:civ_border_color="#FAFAFA"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="#00FFEAEA" />
+
+
+    <Button
+        android:id="@+id/go4"
+        android:layout_width="77dp"
+        android:layout_height="38dp"
+        android:background="@drawable/adopte_btn"
+        android:fontFamily="@font/arabic"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="570dp"
+        android:textColor="@color/colorAccent"
+        android:text="التقدم" />
+
+    <LinearLayout
+        android:layout_width="241dp"
+        android:layout_height="598dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+
+
+        <EditText
+            android:id="@+id/addLost_name_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text=""
+            android:hint="اسم قطك"
+            android:textColor="#FDFCFD"
+            android:background="@drawable/text_back"
+            android:textSize="15dp"
+            android:textColorHint="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/addLost_area_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text=""
+            android:hint="المنطقة"
+            android:textColor="#FDFCFD"
+            android:background="@drawable/text_back"
+            android:textSize="15dp"
+            android:textColorHint="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/addLost_street_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text=""
+            android:hint="القطعة - الشارع"
+            android:textColor="#FDFCFD"
+            android:background="@drawable/text_back"
+            android:textSize="12dp"
+            android:textColorHint="@color/colorAccent"
+            />
+
+        <EditText
+            android:id="@+id/addLost_phone_textView"
+            android:layout_width="159dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:hint="رقم هاتفك"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/addLost_breed_textView"
+            android:layout_width="159dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:hint="فصيلة القط"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/addLost_details_textViewCV"
+            android:layout_width="188dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:hint="معلومات وصفية عن القط"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

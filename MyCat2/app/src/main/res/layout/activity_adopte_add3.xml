@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adopte_add3"
+    android:background="@drawable/empty_back">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/arabic"
+            android:text="ادخل ما يلي :"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/addAdopte_name_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="340dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text=""
+            android:hint="اسم قطك"
+            android:textColor="#FDFDFD"
+            android:background="@drawable/text_back"
+            android:textSize="15dp"
+            android:textColorHint="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/addAdopte_breed2_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="420dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:hint="الفصيلة"
+            android:text=""
+            android:textColor="#FDFDFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addAdopte_age_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:hint="العمر"
+            android:text=""
+            android:textColor="#FDFDFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/addAdopte_details2_textView"
+            android:layout_width="266dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="570dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:hint="مواصفات القط :"
+            android:text=""
+            android:textColor="#FDFDFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addAdopte_phone_textView"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="660dp"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:text="جنس القط :"
+            android:textColor="@color/colorAccent"
+            android:textSize="17dp" />
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/six1"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="700sp"
+            android:orientation="horizontal"
+            app:sc_border_width="2dp"
+            app:sc_checked_text_color="#F7F6FA"
+            app:sc_corner_radius="2dp"
+            app:sc_tint_color="@color/colorAccent"
+
+            >
+
+            <RadioButton
+                android:id="@+id/male"
+                style="@style/RadioButton"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#3F89C5"
+                android:fontFamily="@font/arabic"
+                android:text="ذكر"
+                android:textColor="#213393" />
+
+            <RadioButton
+                android:id="@+id/female"
+                style="@style/RadioButton"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#DD1E97"
+                android:fontFamily="@font/arabic"
+                android:text="انثى"
+                android:textColor="#E91E63" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <ImageView
+            android:id="@+id/mchoose_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_download"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="150dp"
+            />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/arabic"
+            android:text="صورة قطك  >"
+            android:textColor="#463347"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_adopte_image"
+            android:layout_width="160dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="170dp"
+            app:civ_border_color="#FAFAFA"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#00FFEAEA" />
+
+        <EditText
+            android:id="@+id/addAdopte_reason_textView"
+            android:layout_width="339dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="780dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:hint="سبب عرض القط للتبني  :"
+            android:lines="2"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="35dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/addAdopte_health_textView"
+            android:layout_width="339dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="870dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:hint="تاريخ القط الطبي و ظروفه الصحية :"
+            android:lines="3"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/addAdopte_rules_textView"
+            android:layout_width="338dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="960dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:hint="الشروط الشخصية و البيئية لقبول التبني :"
+            android:lines="5"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/addAdopte_check1_textView"
+            android:layout_width="115dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="1050dp"
+            android:layout_marginStart="250dp"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:text=" التعقيم : "
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/addAdopte_check2_textView"
+            android:layout_width="120dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="1050dp"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:text=" التطعيم : "
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/six2"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="1100dp"
+            android:layout_marginStart="240dp"
+            app:sc_border_width="2dp"
+            app:sc_checked_text_color="#F7F6FA"
+            app:sc_corner_radius="5dp"
+            app:sc_tint_color="@color/colorAccent"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/done1"
+                style="@style/RadioButton"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#12AF18"
+                android:fontFamily="@font/arabic"
+                android:text="تم"
+                android:textColor="#1FB325" />
+
+            <RadioButton
+                android:id="@+id/unDone1"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:backgroundTint="#D31F12"
+                android:fontFamily="@font/arabic"
+                android:text="لم يتم"
+                android:textColor="#E91E63" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/six3"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="1100dp"
+            android:orientation="horizontal"
+            app:sc_border_width="2dp"
+            app:sc_checked_text_color="#F7F6FA"
+            app:sc_corner_radius="5dp"
+            app:sc_tint_color="@color/colorAccent"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/done2"
+                style="@style/RadioButton"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#12AF18"
+                android:fontFamily="@font/arabic"
+                android:text="تم"
+                android:textColor="#1FB325"
+             />
+
+            <RadioButton
+                android:id="@+id/unDone2"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:backgroundTint="#D31F12"
+                android:fontFamily="@font/arabic"
+                android:text="لم يتم"
+                android:textColor="#E91E63"
+                />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <EditText
+            android:id="@+id/addAdopte_phone2_textView"
+            android:layout_width="158dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="1160dp"
+            android:background="@drawable/text_back"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:hint="رقم هاتفك :"
+            android:lines="5"
+            android:text=""
+            android:textColor="#FDFCFD"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/go3"
+            android:layout_width="77dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="1230dp"
+            android:layout_marginStart="170dp"
+            android:background="@drawable/adopte_btn"
+            android:fontFamily="@font/arabic"
+            android:text="التقدم"
+            android:textColor="@color/colorAccent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginBottom="40dp"/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

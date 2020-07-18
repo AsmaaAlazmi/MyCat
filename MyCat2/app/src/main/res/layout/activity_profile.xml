@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile"
+    tools:context=".profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-25dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/arabic"
+        android:text="اسمك  :"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/usernameInput"
+        android:layout_width="116dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="176dp"
+        android:fontFamily="@font/medium"
+        android:gravity="center"
+        android:text="asmaa"
+        android:textColor="#0F0010"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="410dp"
+        android:fontFamily="@font/arabic"
+        android:text="بريدك الالكتروني :"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/EmailInput"
+        android:layout_width="172dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="410dp"
+        android:fontFamily="@font/medium"
+        android:gravity="center"
+        android:text="a@gmail.com"
+        android:textColor="#0F0010"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/arabic"
+        android:text="كلمة السر  :"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passInput"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/medium"
+        android:gravity="center"
+        android:text="2514jdhdg"
+        android:textAlignment="center"
+        android:textColor="#0F0010"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_custom"
+        android:fontFamily="@font/arabic"
+        android:text="اعادة تعيين "
+        android:textColor="#F4F3F4" />
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/arrow"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="580dp"/>
+
+
+</RelativeLayout>
